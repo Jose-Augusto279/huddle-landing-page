@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:wght@400;600&display=swap');
+
+body {
+    background-color: var(--primary-dark);
+    width: 100vw;
+    height: 100vh;
+    max-width: 1440px;
+    position: relative;
+}
+
+body .imagem-de-fundo {
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+header .menu {
+    padding: 5.3rem;
+    margin-left: 1.5rem;
+}
+
+header .menu .logo {
+    width: 21.5rem;
+}
+
+.container .principal-page {
+    padding: 2.8rem 7rem;
+    display: flex;
+    gap: 5.5rem;
+}
+
+.container .principal-page .informations {
+    display: flex;
+    max-width: 52rem;
+    gap: 2.2rem;
+    flex-direction: column;
+    margin-top: 0.3rem;
+}
+
+.container .principal-page .informations .title {
+    font-size: 3.95rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 4.2rem;
+}
+
+.container .principal-page .informations .text {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}
+
+.container .principal-page .informations .register {
+    width: 20rem;
+    height: 5.5rem;
+    margin-top: 0.1rem;
+    border-radius: 3rem;
+    color: var(--primary-dark);
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border-style: none;
+    box-shadow: 0.7rem 0.6rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.container .principal-page .informations a {
+    width: 20rem;
+}
+
+.container .principal-page .informations a .register:active {
+    background-color: var(--primary-soft);
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .footer {
+    height: auto;
+    transform: translateY(-11%);
+}
+
+.container .footer .social-media {
+    height: auto;
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.6rem;
+    margin-right: 8rem;
+}
+
+.container .footer .social-media .icon {
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem;
+    border: solid 0.1rem #fff;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.container .footer .social-media .icon:active {
+    cursor: pointer;
+    border: 0.1rem solid var(--primary-medium);
+    color: var(--primary-medium);
+}
+
+.container .footer .social-media #instagram {
+    padding: 0.9rem;
+}
+
+@media (max-width: 425px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background: url(../images/bg-mobile.svg) no-repeat var(--primary-dark);
+        background-size: 100%;
+    }
+
+    body .imagem-de-fundo {
+       display: none;  
+    }
+
+    header .menu {
+        padding: 3.2rem 2rem;
+    }
+
+    header .menu .logo {
+        width: 12.7rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.7rem;
+    }
+
+    .container .principal-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1.5rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    .container .principal-page .illustration-mockups {
+        width: 30rem;
+    }
+
+    .container .principal-page .informations {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0 2.6rem;
+        gap: 1.7rem;
+        width: 100%;
+    }
+
+    .container .principal-page .informations .title {
+        font-size: 2.4rem;
+    }
+
+    .container .principal-page .informations .text {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        line-height: 2.4rem;
+    }
+
+    .container .principal-page .informations a .register {
+        height: 4rem;
+        margin-top: 0.6rem;
+        font-size: 1.2rem;
+    }
+
+    .container .footer {
+        transform: translateY(0);
+    }
+    
+    .container .footer .social-media {
+        margin: 6.5rem 0;
+        gap: 1.2rem;
+    }
+
+    .container .footer .social-media .icon {
+        width: 2.7rem;
+        height: 2.7rem;
+        padding: 0.6rem;
+    }
+
+    .container .footer .social-media #instagram {
+        padding: 0.5rem;
+    }
+}
+    
